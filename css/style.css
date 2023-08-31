@@ -1,0 +1,55 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  color: #ffffff;
+  padding: 26px 0;
+  text-align: center;
+  background-color: #2b2e35;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__logo {
+  margin: 0 auto;
+  width: 294px;
+  height: auto;
+  padding: 12px 0;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slick-img img {
+  height: auto;
+  width: 100%;
+}
+
+.strengths__wrap {
+  width: 89%;
+  margin: 0 auto;
+}
+
+.contract__img {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.footer {
+  margin-top: 115px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
