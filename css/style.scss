@@ -92,6 +92,7 @@ h3 {
 .faq {
   background-color: rgba(233, 233, 233, 0.8);
   &__title {
+    margin-top: 48px;
     margin-bottom: 40px;
   }
   &__wrap {
@@ -130,6 +131,7 @@ h3 {
   padding: 10px 20px;
 }
 .accordion-content {
+  margin-top: 62px;
   width: 100%;
   display: none;
 }
@@ -142,10 +144,6 @@ h3 {
   border: 1px solid #2b2e35;
 }
 
-/* コンテンツボックスの枠線 あとで消す*/
-.accordion-item .accordion-content {
-  border: 1px solid #2b2e35;
-}
 /* 矢印 */
 .accordion-title {
   position: relative;
@@ -166,27 +164,24 @@ h3 {
   top: 12%;
 }
 
-#column ul {
+.column02 ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#column li {
-}
-
-#column li p {
+.column02 li p {
   font-size: 90%;
   margin-bottom: 3px;
 }
 
-#column li span {
+.column02 li span {
   font-size: 14px;
   display: block;
 }
 
 .column02 {
-  width: 95%;
+  width: 96%;
   margin: 0 auto;
 }
 .column02 li {
