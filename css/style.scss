@@ -54,6 +54,7 @@ h3 {
 }
 
 .set {
+  background-color: rgba(43, 46, 53, 0.5);
   &__img {
     // background-color: #2b2e35;
     // opacity: 0.5;
@@ -79,10 +80,23 @@ h3 {
   &__title {
     margin-bottom: 48px;
   }
+  &__list {
+    &-title {
+    }
+    &-img {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
 }
 .faq {
+  background-color: rgba(233, 233, 233, 0.8);
   &__title {
     margin-bottom: 40px;
+  }
+  &__wrap {
+    width: 95%;
+    margin: 0 auto;
   }
 }
 
@@ -99,4 +113,63 @@ h3 {
 .footer {
   margin-top: 115px;
   text-align: center;
+}
+
+.accordion {
+  margin-top: 30px;
+  position: relative;
+}
+.accordion-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+  width: 100%;
+  color: #2b2e35;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.accordion-content {
+  width: 100%;
+  display: none;
+  padding: 10px 20px;
+}
+.accordion-content p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+/* タイトルの背景色 */
+.accordion-item .accordion-title {
+  border: 1px solid #2b2e35;
+}
+
+/* コンテンツボックスの枠線 */
+.accordion-item .accordion-content {
+  border: 1px solid #2b2e35;
+}
+/* 矢印 */
+.accordion-title {
+  position: relative;
+}
+.accordion-title::after {
+  // border-right: solid 2px #fff;
+  // border-top: solid 2px #fff;
+  content: "＋";
+  display: block;
+  // height: 14px;
+  font-size: 24px;
+  width: 24px;
+  position: absolute;
+  right: 25px;
+  top: 12%;
+  // transform: rotate(135deg);
+  // transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  width: 8px;
+}
+.accordion-title.open::after {
+  content: "ー";
+  font-size: 24px;
+  // width: 24px;
+  top: 12%;
+  // transform: rotate(-45deg);
 }

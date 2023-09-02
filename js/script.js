@@ -28,23 +28,12 @@ $(function () {
 });
 ////////////////
 
-$(".hoge-item .img-box > img").click(function () {
-  var src = $(this).attr("src");
-  var cap = $(this).attr("alt");
-  $(".modal-block").fadeIn().css("display", "flex");
-
-  $("#popup").attr("src", src);
-  $(".caption").text(cap);
-});
-
-$(".modal-block").click(function (e) {
-  // モーダルの外側をクリックした場合にのみモーダルを閉じる
-  if (e.target === this) {
-    $(this).css("display", "none");
-  }
-});
-
-$(".img-section > span").click(function () {
-  // モーダルを閉じるボタンがクリックされた場合にモーダルを閉じる
-  $(".modal-block").css("display", "none");
+$(function () {
+  // タイトルをクリックすると
+  $(".js-accordion-title").on("click", function () {
+    // クリックした次の要素を開閉
+    $(this).next().slideToggle(100);
+    // タイトルにopenクラスを付け外しして矢印の向きを変更
+    $(this).toggleClass("open", 100);
+  });
 });
