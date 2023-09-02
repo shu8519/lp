@@ -115,7 +115,6 @@ h3 {
 .accordion-content {
   width: 100%;
   display: none;
-  padding: 10px 20px;
 }
 
 .accordion-content p {
@@ -128,7 +127,7 @@ h3 {
   border: 1px solid #2b2e35;
 }
 
-/* コンテンツボックスの枠線 */
+/* コンテンツボックスの枠線 あとで消す*/
 .accordion-item .accordion-content {
   border: 1px solid #2b2e35;
 }
@@ -153,4 +152,29 @@ h3 {
   content: "ー";
   font-size: 24px;
   top: 12%;
+}
+
+#column ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#column li p {
+  font-size: 90%;
+  margin-bottom: 3px;
+}
+
+#column li span {
+  font-size: 14px;
+  display: block;
+}
+
+.column02 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.column02 li {
+  max-width: 315px;
 }/*# sourceMappingURL=style.css.map */

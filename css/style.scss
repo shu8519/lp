@@ -132,7 +132,6 @@ h3 {
 .accordion-content {
   width: 100%;
   display: none;
-  padding: 10px 20px;
 }
 .accordion-content p {
   font-size: 13px;
@@ -143,7 +142,7 @@ h3 {
   border: 1px solid #2b2e35;
 }
 
-/* コンテンツボックスの枠線 */
+/* コンテンツボックスの枠線 あとで消す*/
 .accordion-item .accordion-content {
   border: 1px solid #2b2e35;
 }
@@ -152,24 +151,44 @@ h3 {
   position: relative;
 }
 .accordion-title::after {
-  // border-right: solid 2px #fff;
-  // border-top: solid 2px #fff;
   content: "＋";
   display: block;
-  // height: 14px;
   font-size: 24px;
   width: 24px;
   position: absolute;
   right: 25px;
   top: 12%;
-  // transform: rotate(135deg);
-  // transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   width: 8px;
 }
 .accordion-title.open::after {
   content: "ー";
   font-size: 24px;
-  // width: 24px;
   top: 12%;
-  // transform: rotate(-45deg);
+}
+
+#column ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#column li {
+}
+
+#column li p {
+  font-size: 90%;
+  margin-bottom: 3px;
+}
+
+#column li span {
+  font-size: 14px;
+  display: block;
+}
+
+.column02 {
+  width: 95%;
+  margin: 0 auto;
+}
+.column02 li {
+  max-width: 315px;
 }
