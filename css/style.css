@@ -11,6 +11,14 @@ img {
   width: 100%;
 }
 
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 .title {
   color: #ffffff;
   padding: 26px 0;
@@ -39,11 +47,30 @@ img {
   width: 100%;
 }
 
+.set__img :hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.strengths__title {
+  margin-bottom: 56px;
+}
 .strengths__wrap {
   width: 89%;
   margin: 0 auto;
 }
 
+.price__title {
+  margin-bottom: 48px;
+}
+
+.faq__title {
+  margin-bottom: 40px;
+}
+
+.contract__title {
+  margin-bottom: 40px;
+}
 .contract__img {
   margin: 0 auto;
   width: 85%;
