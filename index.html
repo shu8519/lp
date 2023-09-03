@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/modaal.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +43,8 @@
     </div>
   </div>
   <section class="set">
+
+
     <div class="set__img">
       <a href="/"><img src="./img/set_img01.jpg" alt="ボディケアセット"></a>
     </div>
@@ -74,21 +77,27 @@
 
     <section class="price">
       <h2 class="price__title title">SET PRICE(定期販売コース)</h2>
+
       <div class="price__list">
         <h3 class="price__list-title">ボディケアセット</h3>
-        <div class="price__list-img"><img src="./img/price_img01.jpg" alt="ボディケアセット"></div>
+        <div class="price__list-img"><a href="#modal" class="btn js-modal-target"><img src="./img/price_img01.jpg"
+              alt="ボディケアセット"></a></div>
+
+        <div id="modal" class="modal">
+          <p>モーダルの内容が表示されます</p>
+        </div>
+
         <div><a href="">商品詳細／ご購入はこちら</a></div>
       </div>
+
+
+
 
       <div>
         <h3>スキンケアセット</h3>
         <div class=""><img src="./img/price_img02.jpg" alt="スキンケアセット"></div>
         <div><a href="">商品詳細／ご購入はこちら</a></div>
 
-
-
-
-        単品はこちら
 
         <div class="accordion">
           <div class="accordion-container">
@@ -102,22 +111,22 @@
                 <div class="column02">
                   <ul>
                     <li><a href=""><img src="./img/set_list_img01.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>シャンプー</p><span>4,300円(税込)</span>
                       </a></li>
                     <li><a href=""><img src="./img/set_list_img02.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>コンディショナー</p><span>4,400円(税込)</span>
                       </a></li>
                     <li><a href=""><img src="./img/set_list_img03.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>ボディソープ</p><span>4,300円(税込)</span>
                       </a></li>
                     <li><a href=""><img src="./img/set_list_img04.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>スキンローション</p><span>4,400円(税込)</span>
                       </a></li>
                     <li><a href=""><img src="./img/set_list_img05.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>スキンケアミルク</p><span>4,500円(税込)</span>
                       </a></li>
                     <li><a href=""><img src="./img/set_list_img06.jpg" />
-                        <p>商品名</p><span>2,600円</span>
+                        <p>フェイスウォッシュフォーム</p><span>4,300円(税込)</span>
                       </a></li>
 
                   </ul>
@@ -143,76 +152,76 @@
   <section class="faq">
     <h2 class="faq__title title">FAQ</h2>
     <div class="faq__wrap">
-      <div class="accordion">
-        <div class="accordion-container">
-          <div class="accordion-item">
-            <p class="accordion-title js-accordion-title">
-              <span>Q</span>定期便にはどんなメリットがありますか？
-            </p>
-            <!--/.accordion-title-->
-            <div class="accordion-content">
-              <p><span>A</span>通常価格よりお得な価格で購入できます。<br>
-                *初月時25%OFF、2ヶ月目以降10%OFF</p>
-            </div>
-            <!--/.accordion-content-->
+      <div class="faq__accordion">
+        <!-- <div class="faq__accordion-container"> -->
+        <div class="faq__accordion-item">
+          <p class="faq__accordion-title js-accordion-title">
+            <span>Q</span>定期便にはどんなメリットがありますか？
+          </p>
+          <!--/.faq__accordion-title-->
+          <div class="faq__accordion-content">
+            <p><span>A</span>通常価格よりお得な価格で購入できます。<br>
+              *初月時25%OFF、2ヶ月目以降10%OFF</p>
           </div>
-
-          <div class="accordion-item">
-            <p class="accordion-title js-accordion-title">
-              <span>Q</span>注文してから何日後に商品が届きますか？
-            </p>
-            <!--/.accordion-title-->
-            <div class="accordion-content">
-              <p><span>A</span>初回発送につきましては、ご注文から5営業日（土日祝・年末年始・
-                夏季休暇を除く）以内での発送となります。 定期商品の場合、二回
-                目からの発送日はマイページよりご変更いただけます。</p>
-            </div>
-            <!--/.accordion-content-->
-          </div>
-
-          <div class="accordion-item">
-            <p class="accordion-title js-accordion-title">
-              <span>Q</span>定期便の解約・お届けサイクルの変更はできますか？
-            </p>
-            <!--/.accordion-title-->
-            <div class="accordion-content">
-              <p><span>A</span>可能です。ページ下部の[お届けサイクルと解約について]をご確認く
-                ださい。</p>
-            </div>
-            <!--/.accordion-content-->
-          </div>
-
-          <div class="accordion-item">
-            <p class="accordion-title js-accordion-title">
-              <span>Q</span>キャンセル・返品交換はできますか？
-            </p>
-            <!--/.accordion-title-->
-            <div class="accordion-content">
-              <p><span>A</span>商品に欠陥がある場合を除き、返品には応じることはできません。<br>
-                欠陥がある場合、当webサイトのお問い合わせよりご連絡ください。</p>
-            </div>
-            <!--/.accordion-content-->
-          </div>
-
-          <div class="accordion-item">
-            <p class="accordion-title js-accordion-title">
-              <span>Q</span>定期便にはどんなメリットがありますか？
-            </p>
-            <!--/.accordion-title-->
-            <div class="accordion-content">
-              <p><span>A</span>通常価格よりお得な価格で購入できます。<br>
-                *初月時25%OFF、2ヶ月目以降10%OFF</p>
-            </div>
-            <!--/.accordion-content-->
-          </div>
-
-
-
-          <!-- /.accordion-item -->
+          <!--/.faq__accordion-content-->
         </div>
-        <!-- /.accordion-container -->
+
+        <div class="faq__accordion-item">
+          <p class="faq__accordion-title js-accordion-title">
+            <span>Q</span>注文してから何日後に商品が届きますか？
+          </p>
+          <!--/.faq__accordion-title-->
+          <div class="faq__accordion-content">
+            <p><span>A</span>初回発送につきましては、ご注文から5営業日（土日祝・年末年始・
+              夏季休暇を除く）以内での発送となります。 定期商品の場合、二回
+              目からの発送日はマイページよりご変更いただけます。</p>
+          </div>
+          <!--/.faq__accordion-content-->
+        </div>
+
+        <div class="faq__accordion-item">
+          <p class="faq__accordion-title js-accordion-title">
+            <span>Q</span>定期便の解約・お届けサイクルの変更はできますか？
+          </p>
+          <!--/.faq__accordion-title-->
+          <div class="faq__accordion-content">
+            <p><span>A</span>可能です。ページ下部の[お届けサイクルと解約について]をご確認く
+              ださい。</p>
+          </div>
+          <!--/.faq__accordion-content-->
+        </div>
+
+        <div class="faq__accordion-item">
+          <p class="faq__accordion-title js-accordion-title">
+            <span>Q</span>キャンセル・返品交換はできますか？
+          </p>
+          <!--/.faq__accordion-title-->
+          <div class="faq__accordion-content">
+            <p><span>A</span>商品に欠陥がある場合を除き、返品には応じることはできません。<br>
+              欠陥がある場合、当webサイトのお問い合わせよりご連絡ください。</p>
+          </div>
+          <!--/.faq__accordion-content-->
+        </div>
+
+        <div class="faq__accordion-item">
+          <p class="faq__accordion-title js-accordion-title">
+            <span>Q</span>定期便にはどんなメリットがありますか？
+          </p>
+          <!--/.faq__accordion-title-->
+          <div class="faq__accordion-content">
+            <p><span>A</span>通常価格よりお得な価格で購入できます。<br>
+              *初月時25%OFF、2ヶ月目以降10%OFF</p>
+          </div>
+          <!--/.faq__accordion-content-->
+        </div>
+
+
+
+        <!-- /.faq__accordion-item -->
+        <!-- </div> -->
+        <!-- /.faq__accordion-container -->
       </div>
-      <!-- .accordion -->
+      <!-- .faq__accordion -->
     </div>
 
   </section>
@@ -224,16 +233,29 @@
 
   </div>
 
+
+
   <footer class="footer">
     <p>&copy; MATIN AVENIR La beaute </p>
 
   </footer>
 
 
+  <div class="btn-wrap">
+    <a href="#modal" class="btn js-modal-target">リンクをクリック</a>
+    <button class="btn js-modal-button-target" data-modal="#modal">ボタンをクリック</button>
+  </div>
+
+  <div id="modal" class="modal">
+    <p>モーダルの内容が表示されます</p>
+  </div>
+
+
 
   <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="./js/script.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/modaal.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

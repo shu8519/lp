@@ -56,6 +56,9 @@ h3 {
   transition: all 0.5s;
 }
 
+.strengths {
+  background-color: rgba(233, 233, 233, 0.8);
+}
 .strengths__title {
   margin-bottom: 56px;
 }
@@ -151,6 +154,68 @@ h3 {
   top: 12%;
 }
 
+.faq__wrap {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.faq__accordion {
+  margin-top: 30px;
+  position: relative;
+}
+
+.faq__accordion-item {
+  margin-bottom: 36px;
+}
+
+.faq__accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__accordion-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 640px;
+  width: 100%;
+  color: #2b2e35;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.faq__accordion-content {
+  width: 100%;
+  display: none;
+  background-color: #ffffff;
+}
+
+.faq__accordion-content p {
+  line-height: 1.5;
+}
+
+/* ＋　−表示 */
+.faq__accordion-title {
+  position: relative;
+}
+
+.faq__accordion-title::after {
+  content: "＋";
+  display: block;
+  font-size: 24px;
+  width: 24px;
+  position: absolute;
+  right: 25px;
+  top: 12%;
+  width: 8px;
+}
+
+.faq__accordion-title.open::after {
+  content: "ー";
+  font-size: 24px;
+  top: 12%;
+}
+
 .column02 ul {
   display: flex;
   flex-wrap: wrap;
@@ -158,8 +223,7 @@ h3 {
 }
 
 .column02 li p {
-  font-size: 90%;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .column02 li span {
@@ -174,4 +238,35 @@ h3 {
 
 .column02 li {
   max-width: 315px;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+}
+
+/* モーダルのスタイル調整 */
+.modaal-content-container {
+  padding: 20px;
+}
+
+/* ✕ボタンの位置調整 */
+.modaal-close {
+  position: absolute;
+  top: -60px;
+  right: 0;
+}
+
+/* ✕ボタンの色 */
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+/* ホバーしたときの✕ボタンの色 */
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #ca353b;
 }/*# sourceMappingURL=style.css.map */
