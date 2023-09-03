@@ -59,12 +59,11 @@ h3 {
 .strengths {
   background-color: rgba(233, 233, 233, 0.8);
 }
-.strengths__title {
-  margin-bottom: 56px;
-}
 .strengths__wrap {
   width: 89%;
   margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .price__list-title {
@@ -99,6 +98,7 @@ h3 {
 .footer {
   margin-top: 115px;
   text-align: center;
+  font-size: 14px;
 }
 
 .accordion {
@@ -203,11 +203,11 @@ h3 {
 .faq__sub-title {
   width: 25px;
   font-size: 32px;
-  margin-right: 36px;
+  margin-right: 18px;
 }
 
 .faq__text {
-  width: 540px;
+  width: 530px;
 }
 
 .faq__accordion-content p {
