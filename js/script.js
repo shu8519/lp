@@ -45,12 +45,12 @@ $(".js-modal-close").on("click", function () {
 
 $(".modal").modaal({
   type: "inline",
-  hide_close: false, // 閉じるボタンの表示・非表示の制御する
+  hide_close: true, // 閉じるボタンの表示・非表示の制御する
   background: "#000000", // 背景オーバーレイの色を設定
-  overlay_opacity: 0.8, // 背景オーバーレイの透明度を設定
+  overlay_opacity: 0.6, // 背景オーバーレイの透明度を設定
   overlay_close: true, // 背景オーバーレイをクリックしてモーダルが閉じるかどうかの制御
   animation_speed: 300, // トリガーをクリックしてから、モーダルが表示されるまでのスピード
   background_scroll: false, // モーダルを開いている間、背景をスクロールできるかどうか
-  width: 400, // モーダルの幅を設定
+  width: 670, // モーダルの幅を設定
   height: 300, // モーダルの高さを設定
 });

@@ -67,12 +67,13 @@ h3 {
   margin: 0 auto;
 }
 
-.price__title {
-  margin-bottom: 48px;
+.price__list-title {
+  margin-top: 48px;
+  padding-left: 40px;
 }
 .price__list-img {
   width: 95%;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 .faq {
@@ -101,19 +102,20 @@ h3 {
 }
 
 .accordion {
-  margin-top: 30px;
+  margin-top: 24px;
   position: relative;
 }
 
 .accordion-title {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 540px;
   width: 100%;
   color: #2b2e35;
   cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 20px;
+  padding: 18px 0;
 }
 
 .accordion-content {
@@ -144,14 +146,14 @@ h3 {
   width: 24px;
   position: absolute;
   right: 25px;
-  top: 12%;
+  top: 23%;
   width: 8px;
 }
 
 .accordion-title.open::after {
   content: "ー";
   font-size: 24px;
-  top: 12%;
+  top: 23%;
 }
 
 .faq__wrap {
@@ -174,6 +176,8 @@ h3 {
 }
 
 .faq__accordion-title {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   max-width: 640px;
@@ -181,17 +185,38 @@ h3 {
   color: #2b2e35;
   background-color: #ffffff;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 24px 16px;
 }
 
 .faq__accordion-content {
   width: 100%;
   display: none;
   background-color: #ffffff;
+  padding: 0 16px 36px;
+}
+
+.faq__accordion-content-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.faq__sub-title {
+  width: 25px;
+  font-size: 32px;
+  margin-right: 36px;
+}
+
+.faq__text {
+  width: 540px;
 }
 
 .faq__accordion-content p {
   line-height: 1.5;
+}
+
+.faq__accordion-content span {
+  font-size: 36px;
+  margin-right: 30px;
 }
 
 /* ＋　−表示 */
@@ -205,15 +230,15 @@ h3 {
   font-size: 24px;
   width: 24px;
   position: absolute;
-  right: 25px;
-  top: 12%;
+  right: 36px;
+  top: 30%;
   width: 8px;
 }
 
 .faq__accordion-title.open::after {
   content: "ー";
   font-size: 24px;
-  top: 12%;
+  top: 30%;
 }
 
 .column02 ul {
@@ -245,15 +270,33 @@ h3 {
   display: none;
 }
 
+.modaal-container {
+  color: #ffffff;
+  max-width: 670px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-img {
+  max-width: 638px;
+}
+
 /* モーダルのスタイル調整 */
 .modaal-content-container {
-  padding: 20px;
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 100px 16px;
 }
 
 /* ✕ボタンの位置調整 */
 .modaal-close {
   position: absolute;
-  top: -60px;
+  top: 40px;
+  right: 56px;
+}
+
+.modaal-close:after,
+.modaal-close:before {
+  top: 0;
   right: 0;
 }
 
@@ -268,5 +311,30 @@ h3 {
 .modaal-close:focus:before,
 .modaal-close:hover:after,
 .modaal-close:hover:before {
-  background: #ca353b;
+  background: #ccc;
+}
+
+.modaal-close:after,
+.modaal-close:before {
+  border-radius: 0;
+}
+
+.modaal-close {
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-b {
+  max-width: 542px;
+  background-color: #2b2e35;
+  text-align: center;
+  margin: 40px auto 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn-b a {
+  padding: 18px 0;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
