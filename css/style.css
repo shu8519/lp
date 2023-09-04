@@ -336,14 +336,13 @@ h3 {
 /* ✕ボタンの位置調整 */
 .modaal-close {
   position: absolute;
-  top: 40px;
-  right: 56px;
+  top: 28px;
+  right: 28px;
+  background-color: none;
 }
 
-.modaal-close:after,
-.modaal-close:before {
-  top: 0;
-  right: 0;
+.modaal-close:hover {
+  background: none;
 }
 
 /* ✕ボタンの色 */
@@ -367,8 +366,6 @@ h3 {
 
 .modaal-close {
   border-radius: 0;
-  width: 30px;
-  height: 30px;
 }
 
 .inner {
