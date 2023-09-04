@@ -33,7 +33,7 @@ h3 {
 
 .header__logo {
   margin: 0 auto;
-  width: 294px;
+  max-width: 294px;
   height: auto;
   padding: 12px 0;
 }
@@ -49,11 +49,58 @@ h3 {
 }
 
 .set {
-  background-color: rgba(43, 46, 53, 0.5);
+  position: relative;
+  color: #ffffff;
 }
-.set__img :hover {
-  opacity: 0.7;
+.set__img {
+  height: 290px;
+}
+.set__img::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #2b2e35;
+  z-index: -10;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+}
+.set__img::after {
+  content: "";
+  background: url(../img/set_img01.png) no-repeat;
+  display: block;
+  position: absolute;
+  z-index: -100;
+  width: 292px;
+  height: 274px;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.set__img-text {
+  z-index: 1;
+}
+.set-btn {
+  text-align: center;
+  max-width: 314px;
+  width: 100%;
+  margin: 0 auto;
+}
+.set-btn:hover {
+  opacity: 0.8;
   transition: all 0.5s;
+}
+.set-btn:hover + .set__img::before {
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+.set-btn a {
+  display: block;
+  padding: 10px 0;
+  background-color: #2b2e35;
 }
 
 .strengths {
@@ -71,7 +118,8 @@ h3 {
   padding-left: 40px;
 }
 .price__list-img {
-  width: 95%;
+  max-width: 670px;
+  padding: 0 16px;
   margin: 40px auto 0;
 }
 
@@ -92,7 +140,8 @@ h3 {
 }
 .contract__img {
   margin: 0 auto;
-  width: 85%;
+  max-width: 670px;
+  padding: 0 34px;
 }
 
 .footer {
@@ -108,13 +157,9 @@ h3 {
 
 .price__accordion-title {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 540px;
   width: 100%;
   color: #2b2e35;
   cursor: pointer;
-  font-size: 20px;
   padding: 18px 0;
 }
 
@@ -257,7 +302,8 @@ h3 {
 }
 
 .column02 {
-  width: 96%;
+  max-width: 670px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -325,16 +371,22 @@ h3 {
   height: 30px;
 }
 
+.inner {
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 0 64px;
+  font-size: 20px;
+}
+
 .btn-b {
-  max-width: 542px;
-  background-color: #2b2e35;
   text-align: center;
-  margin: 40px auto 0;
+  margin-top: 40px;
   color: #ffffff;
   font-size: 20px;
 }
 
 .btn-b a {
+  background-color: #2b2e35;
   padding: 18px 0;
   display: block;
 }/*# sourceMappingURL=style.css.map */
