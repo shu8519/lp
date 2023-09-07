@@ -133,6 +133,35 @@ h3 {
   margin: 40px auto 0;
 }
 
+.modal-img {
+  margin-bottom: 60px;
+}
+.modal-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.modal-product-price {
+  margin: 0 auto;
+  max-width: 280px;
+  display: block;
+  margin-bottom: 72px;
+}
+.modal-product-price-name {
+  margin-bottom: 14px;
+}
+.modal-product-text {
+  margin-top: 48px;
+  margin: 0 auto;
+  max-width: 560px;
+}
+.modal-product-text-wrap {
+  margin-top: 30px;
+}
+.mgt0 {
+  margin-top: 28px;
+}
+
 .faq {
   background-color: rgba(233, 233, 233, 0.8);
 }
@@ -299,28 +328,30 @@ h3 {
   top: 30%;
 }
 
-.column02 ul {
+.price__list-item ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.column02 li p {
+.price__list-item li p {
+  margin-top: 10px;
   margin-bottom: 4px;
 }
 
-.column02 li span {
+.price__list-item li span {
   font-size: 14px;
   display: block;
+  margin-bottom: 14px;
 }
 
-.column02 {
+.price__list-item {
   max-width: 670px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
-.column02 li {
+.price__list-item li {
   max-width: 315px;
 }
 
@@ -386,6 +417,19 @@ h3 {
   margin: 0 auto;
   padding: 0 64px;
   font-size: 20px;
+}
+
+.btn-a {
+  text-align: center;
+  margin-top: 28px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.btn-a a {
+  background-color: #2b2e35;
+  padding: 18px 0;
+  display: block;
 }
 
 .btn-b {
