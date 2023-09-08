@@ -55,18 +55,18 @@ h3 {
   color: #ffffff;
   &__img {
     position: relative;
-    &:before {
-      // 擬似要素
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: #2b2e35;
-      z-index: 10;
-      opacity: 0.5;
-      // pointer-events: none;
-      // transition: 0.8s;
-    }
+    // &:before {
+    // 擬似要素
+    // position: absolute;
+    // content: "";
+    // width: 100%;
+    // height: 100%;
+    // background-color: #2b2e35;
+    // z-index: 10;
+    // opacity: 0.5;
+    // pointer-events: none;
+    // transition: 0.8s;
+    // }
     // &:hover:before {
     //   opacity: 0.3;
     //   transition: 0.8s;
@@ -85,6 +85,20 @@ h3 {
       -ms-transform: translate(-50%, -50%);
     }
   }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2b2e35;
+    max-width: 670px;
+
+    height: 290px;
+    display: block;
+    z-index: 10;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: 0.8s;
+  }
   &-btn {
     position: absolute;
     z-index: 100;
@@ -95,14 +109,15 @@ h3 {
     &:hover {
       opacity: 0.8;
       transition: all 0.5s;
-    }
-    &:hover .set__img:before {
-      opacity: 0.3;
-      transition: all 0.5s;
       pointer-events: auto;
     }
+    &:hover + .set__bg {
+      opacity: 0.3;
+      transition: all 0.5s;
+    }
   }
-  &-btn a {
+
+  &__btn a {
     display: block;
     padding: 10px 0;
     background-color: #2b2e35;
@@ -150,10 +165,16 @@ h3 {
     }
   }
 }
-
+// モーダル箇所
 .modal {
   &-img {
     margin-bottom: 60px;
+  }
+
+  &-set-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 48px;
   }
   &-title {
     text-align: center;
@@ -162,6 +183,21 @@ h3 {
   }
 
   &-product {
+    &-set-price {
+      display: flex;
+      margin: 0 auto 82px;
+      padding-left: 20%;
+      padding-right: 20%;
+
+      &-name {
+        margin-bottom: 14px;
+        width: 50%;
+      }
+
+      &-detail {
+        width: 50%;
+      }
+    }
     &-price {
       margin: 0 auto;
       max-width: 280px;
@@ -179,6 +215,7 @@ h3 {
       margin: 0 auto;
       max-width: 560px;
       &-title {
+        margin-top: 48px;
       }
       &-wrap {
         margin-top: 30px;
@@ -365,6 +402,12 @@ h3 {
   font-size: 14px;
   display: block;
   margin-bottom: 14px;
+}
+.price__list-item li:nth-child(5) span {
+  margin-bottom: 0;
+}
+.price__list-item li:nth-child(6) span {
+  margin-bottom: 0;
 }
 
 .price__list-item {
