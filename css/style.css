@@ -65,21 +65,36 @@ h3 {
   background-color: #2b2e35;
   z-index: 10;
   opacity: 0.5;
+  transition: all 0.8s;
   pointer-events: none;
-  transition: 0.8s;
+}
+.set__img:hover:before {
+  pointer-events: none;
+  opacity: 0.3;
+  transition: all 0.8s;
 }
 .set__img-product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 1;
 }
 .set__img-text {
-  text-align: center;
   position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 100;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 .set__bg {
   position: absolute;
@@ -100,6 +115,7 @@ h3 {
   font-family: "Zen Old Mincho", serif;
 }
 .set__sentense {
+  margin-top: 10px;
   font-size: 28px;
   font-weight: 700;
   font-family: "Zen Old Mincho", serif;
@@ -108,6 +124,8 @@ h3 {
   font-size: 40px;
 }
 .set__price {
+  margin-top: 18px;
+  margin-bottom: 24px;
   font-family: "Noto Serif JP", serif;
   font-size: 32px;
   font-weight: 700;
@@ -116,28 +134,26 @@ h3 {
   font-size: 80px;
   font-weight: 900;
   letter-spacing: -0.05em;
+  margin-right: 10px;
 }
-.set-btn {
+.set__btn {
   font-weight: 700;
   font-family: "Zen Old Mincho", serif;
   font-size: 20px;
-  position: absolute;
   z-index: 100;
   text-align: center;
   width: 100%;
   margin: 0 auto;
 }
-.set-btn:hover {
+.set__btn:hover {
   opacity: 0.8;
   transition: all 0.5s;
-}
-.set-btn:hover-inner {
-  max-width: 514px;
+  pointer-events: auto;
 }
 .set__btn a {
   background-color: #2b2e35;
-  display: block;
-  padding: 10px 0;
+  display: inline-block;
+  padding: 10px 68px;
 }
 
 .strengths__title {
@@ -445,6 +461,11 @@ h3 {
   justify-content: space-between;
 }
 
+.price__list-item ul li:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
 .price__list-item li p {
   margin-top: 10px;
   margin-bottom: 4px;
@@ -548,6 +569,10 @@ h3 {
   font-size: 20px;
   font-weight: 400;
 }
+.btn-a:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
 
 .btn-a a {
   background-color: #2b2e35;
@@ -560,6 +585,10 @@ h3 {
   margin-top: 40px;
   color: #ffffff;
   font-size: 20px;
+}
+.btn-b:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
 }
 
 .btn-b a {
