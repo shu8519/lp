@@ -2,8 +2,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   max-width: 670px;
   margin: 0 auto;
 }
@@ -53,6 +52,7 @@ h3 {
 }
 .set__img {
   position: relative;
+  height: 290px;
 }
 .set__img-product {
   z-index: 1;
@@ -80,7 +80,32 @@ h3 {
   pointer-events: none;
   transition: 0.8s;
 }
+.set__name {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Zen Old Mincho", serif;
+}
+.set__sentense {
+  font-weight: 700;
+  font-family: "Zen Old Mincho", serif;
+}
+.set__sentense span {
+  font-size: 40px;
+}
+.set__price {
+  font-family: "Noto Serif JP", serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.set__price span {
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
 .set-btn {
+  font-weight: 700;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20px;
   position: absolute;
   z-index: 100;
   text-align: center;
@@ -102,6 +127,11 @@ h3 {
   background-color: #2b2e35;
 }
 
+.strengths__title {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
 .strengths__wrap {
   max-width: 670px;
   background-color: rgba(233, 233, 233, 0.8);
@@ -115,21 +145,44 @@ h3 {
   font-size: 18px;
   margin-top: 74px;
   margin-bottom: 90px;
+  font-weight: 400;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 18px;
 }
 .strengths__sub-title {
   font-size: 20px;
   margin-top: 32px;
+  display: inline;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-family: "Zen Old Mincho", serif;
+  font-size: 20px;
 }
 .strengths__sub-title:first-child {
   margin-top: 0;
 }
 .strengths__sentense {
+  font-weight: 400;
+  font-family: "Zen Old Mincho", serif;
   margin-top: 16px;
+  margin-bottom: 32px;
+}
+.strengths__sentense:last-child {
+  margin-bottom: 0;
 }
 
+.price__title {
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
 .price__list-title {
   margin-top: 48px;
   padding-left: 40px;
+  font-size: 20px;
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 700;
 }
 .price__list-img {
   max-width: 670px;
@@ -193,6 +246,9 @@ h3 {
 .faq__title {
   margin-top: 48px;
   margin-bottom: 40px;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 .faq__wrap {
   width: 95%;
@@ -242,8 +298,10 @@ h3 {
 }
 
 /* タイトルの背景色 */
-.price__accordion-item .price__accordion-title {
+.price__accordion-title {
   border: 1px solid #2b2e35;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /* 矢印 */
@@ -266,6 +324,10 @@ h3 {
   content: "ー";
   font-size: 24px;
   top: 23%;
+}
+
+.faq {
+  font-weight: 400;
 }
 
 .faq__wrap {
@@ -317,6 +379,9 @@ h3 {
   font-size: 32px;
   margin-right: 18px;
 }
+.faq__sub-title-text {
+  font-weight: 700;
+}
 
 .faq__text {
   width: 530px;
@@ -362,12 +427,15 @@ h3 {
 .price__list-item li p {
   margin-top: 10px;
   margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .price__list-item li span {
   font-size: 14px;
   display: block;
   margin-bottom: 14px;
+  font-weight: 700;
 }
 
 .price__list-item li:nth-child(5) span {
@@ -457,6 +525,7 @@ h3 {
   margin-top: 28px;
   color: #ffffff;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .btn-a a {
