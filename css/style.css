@@ -242,6 +242,7 @@ h3 {
 }
 .modal-product-price-name {
   margin-bottom: 14px;
+  font-weight: 700;
 }
 .modal-product-text {
   margin-top: 48px;
@@ -283,6 +284,8 @@ h3 {
 }
 
 .footer {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   margin-top: 115px;
   text-align: center;
   font-size: 14px;
