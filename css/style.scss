@@ -459,6 +459,28 @@ h3 {
   }
 }
 
+@media screen and (max-width: 670px) {
+  .modal {
+    &-product {
+      &-set {
+        &-price {
+          display: block;
+          margin: 0 auto 72px;
+          max-width: 230px;
+          &-name {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 14px;
+            width: 100%;
+          }
+          &-detail {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 .price__accordion {
   margin-top: 24px;
   position: relative;
