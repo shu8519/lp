@@ -52,6 +52,8 @@ h3 {
   background-color: #2b2e35;
   padding: 18px 0;
   display: block;
+  max-width: 542px;
+  margin: 0 auto;
 }
 
 .btn-b {
@@ -367,6 +369,7 @@ h3 {
   margin-top: 115px;
   text-align: center;
   font-size: 14px;
+  margin-bottom: 16px;
 }
 
 .modal-img {
