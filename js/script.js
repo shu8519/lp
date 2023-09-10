@@ -1,3 +1,5 @@
+// スライダー
+
 $(function () {
   $(".slider").slick({
     arrows: false, // 前・次のボタンを表示する
