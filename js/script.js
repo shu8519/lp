@@ -56,3 +56,13 @@ $(".modal").modaal({
   width: 670, // モーダルの幅を設定
   height: 300, // モーダルの高さを設定
 });
+
+// ページ内スクロール
+// $('a[href^="#"]').click(function () {
+//   const speed = 600;
+//   let href = $(this).attr("href");
+//   let target = $(href == "#" || href == "" ? "html" : href);
+//   let position = target.offset().top;
+//   $("body,html").animate({ scrollTop: position }, speed, "swing");
+//   return false;
+// });

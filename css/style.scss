@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -30,14 +34,13 @@ h3 {
   max-width: 670px;
   margin: 0 auto;
   padding: 0 64px;
-  font-size: 20px;
 }
 
 .btn-a {
   text-align: center;
   margin-top: 28px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   &:hover {
     opacity: 0.8;
     transition: all 0.5s;
@@ -53,7 +56,7 @@ h3 {
   text-align: center;
   margin-top: 40px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   &:hover {
     opacity: 0.8;
     transition: all 0.5s;
@@ -94,6 +97,7 @@ h3 {
   &__img {
     position: relative;
     height: 290px;
+    // height: clamp(200px, 375px, 290px);
     &:before {
       // 擬似要素
       top: 0;
@@ -123,6 +127,8 @@ h3 {
       flex-direction: column;
       align-items: center;
       z-index: 1;
+      // height: 290px;
+      // height: clamp(200px, 375px, 290px);
     }
     &-text {
       position: absolute;
@@ -135,6 +141,8 @@ h3 {
       align-items: center;
       justify-content: center;
       z-index: 100;
+      // height: 290px;
+      // height: clamp(200px, 375px, 290px);
     }
   }
   &__bg {
@@ -143,7 +151,6 @@ h3 {
     left: 0;
     background-color: #2b2e35;
     max-width: 670px;
-    height: 290px;
     display: block;
     z-index: 10;
     opacity: 0.5;
@@ -151,13 +158,14 @@ h3 {
     transition: 0.8s;
   }
   &__name {
-    font-size: 28px;
+    font-size: clamp(20px, 5vw, 28px);
     font-weight: 700;
     font-family: "Zen Old Mincho", serif;
   }
   &__sentense {
     margin-top: 10px;
     font-size: 28px;
+    font-size: clamp(20px, 4vw, 28px);
     font-weight: 700;
     font-family: "Zen Old Mincho", serif;
     & span {
@@ -167,21 +175,23 @@ h3 {
   &__price {
     margin-top: 18px;
     margin-bottom: 24px;
+    // margin-top: clamp(4px, 4vw, 18px);
+    // margin-bottom: clamp(10px, 4vw, 24px);
+
     font-family: "Noto Serif JP", serif;
-    font-size: 32px;
+    font-size: clamp(20px, 4vw, 32px);
     font-weight: 700;
     & span {
-      font-size: 80px;
+      font-size: clamp(30px, 4vw, 80px);
       font-weight: 900;
       letter-spacing: -0.05em;
-      margin-right: 10px;
+      // margin-right: clamp(4px, 4vw, 10px);
     }
   }
-
   &__btn {
     font-weight: 700;
     font-family: "Zen Old Mincho", serif;
-    font-size: 20px;
+    font-size: clamp(16px, 4vw, 20px);
     z-index: 100;
     text-align: center;
     width: 100%;
@@ -200,10 +210,14 @@ h3 {
   }
 }
 
+.set__img {
+  height: 290px;
+}
+
 // STRENGTHS
 .strengths {
   &__title {
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 24px);
     font-family: "Oswald", sans-serif;
     font-weight: 400;
   }
@@ -217,22 +231,20 @@ h3 {
     font-size: 40px;
   }
   &__introduction {
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
     margin-top: 74px;
     margin-bottom: 90px;
     font-weight: 400;
     font-family: "Zen Old Mincho", serif;
-    font-size: 18px;
   }
   &__sub-title {
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 20px);
     margin-top: 32px;
     display: inline;
     border-bottom: 1px solid #000000;
     padding-bottom: 4px;
     font-weight: 700;
     font-family: "Zen Old Mincho", serif;
-    font-size: 20px;
   }
   &__sub-title:first-child {
     margin-top: 0;
@@ -252,7 +264,7 @@ h3 {
 
 .price {
   &__title {
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 24px);
     font-family: "Oswald", sans-serif;
     font-weight: 400;
   }
@@ -260,7 +272,7 @@ h3 {
     &-title {
       margin-top: 48px;
       padding-left: 40px;
-      font-size: 20px;
+      font-size: clamp(18px, 4vw, 20px);
       font-family: "Zen Old Mincho", serif;
       font-weight: 700;
     }
@@ -279,7 +291,7 @@ h3 {
   &__title {
     margin-top: 48px;
     margin-bottom: 40px;
-    font-size: 24px;
+    font-size: clamp(20px, 4vw, 24px);
     font-family: "Oswald", sans-serif;
     font-weight: 400;
   }
@@ -325,14 +337,15 @@ h3 {
 
   &__sub-title {
     width: 25px;
-    font-size: 32px;
+    font-size: clamp(28px, 4vw, 32px);
     margin-right: 18px;
     &-icon {
       font-weight: 700;
     }
   }
   &__text {
-    width: 79%;
+    width: clamp(78%, 4vw, 82%);
+    font-size: clamp(14px, 4vw, 16px);
   }
 }
 
@@ -360,6 +373,7 @@ h3 {
 
 .contract {
   &__title {
+    font-size: clamp(20px, 4vw, 24px);
     margin-bottom: 40px;
   }
   &__img {
@@ -455,6 +469,11 @@ h3 {
   width: calc(100% - 128px);
   max-width: 542px;
   display: block;
+  border: 1px solid #2b2e35;
+  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
+
+  font-weight: 400;
 }
 .price__accordion-content {
   margin-top: 62px;
@@ -464,12 +483,6 @@ h3 {
 .price__accordion-content p {
   font-size: 13px;
   line-height: 1.5;
-}
-/* タイトルの背景色 */
-.price__accordion-title {
-  border: 1px solid #2b2e35;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 /* 矢印 */
@@ -508,12 +521,12 @@ h3 {
 .price__list-item li p {
   margin-top: 10px;
   margin-bottom: 4px;
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
   font-weight: 400;
 }
 
 .price__list-item li span {
-  font-size: 14px;
+  font-size: clamp(12px, 4vw, 14px);
   display: block;
   margin-bottom: 14px;
   font-weight: 700;
