@@ -31,9 +31,8 @@ h3 {
 }
 
 .inner {
-  max-width: 670px;
+  max-width: 542px;
   margin: 0 auto;
-  padding: 0 64px;
 }
 
 .btn-a {
@@ -59,6 +58,7 @@ h3 {
 .btn-b {
   text-align: center;
   margin-top: 40px;
+  padding: 0 16px;
   color: #ffffff;
   font-size: clamp(16px, 4vw, 20px);
 }
@@ -68,9 +68,10 @@ h3 {
 }
 
 .btn-b a {
+  padding: 16px 0;
   background-color: #2b2e35;
-  padding: 18px 0;
   display: block;
+  max-width: 542px;
 }
 
 .header {
@@ -79,7 +80,7 @@ h3 {
 
 .header__logo {
   margin: 0 auto;
-  max-width: 294px;
+  width: 43.8805970149vw;
   height: auto;
   padding: 12px 0;
 }
@@ -237,6 +238,7 @@ h3 {
   padding-bottom: 4px;
   font-weight: 700;
   font-family: "Zen Old Mincho", serif;
+  line-height: 2.2rem;
 }
 .strengths__sub-title:first-child {
   margin-top: 0;
@@ -436,7 +438,7 @@ h3 {
   cursor: pointer;
   padding: 18px 0;
   margin: 0 auto;
-  width: calc(100% - 128px);
+  width: calc(100% - 32px);
   max-width: 542px;
   display: block;
   border: 1px solid #2b2e35;
@@ -478,36 +480,36 @@ h3 {
   top: 23%;
 }
 
-.price__list-item ul {
+.price__list-item-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.price__list-item ul li:hover {
+.price__list-item-content-product:hover {
   opacity: 0.8;
   transition: all 0.5s;
 }
 
-.price__list-item li p {
+.price__list-item-content-product p {
   margin-top: 10px;
   margin-bottom: 4px;
   font-size: clamp(16px, 4vw, 20px);
   font-weight: 400;
 }
 
-.price__list-item li span {
+.price__list-item-content-product span {
   font-size: clamp(12px, 4vw, 14px);
   display: block;
   margin-bottom: 14px;
   font-weight: 700;
 }
 
-.price__list-item li:nth-child(5) span {
+.price__list-item-content-product:nth-child(5) span {
   margin-bottom: 0;
 }
 
-.price__list-item li:nth-child(6) span {
+.price__list-item-content-product:nth-child(6) span {
   margin-bottom: 0;
 }
 
@@ -544,8 +546,8 @@ h3 {
 /* ✕ボタンの位置調整 */
 .modaal-close {
   position: absolute;
-  top: 16px;
-  right: 36px;
+  top: 46px;
+  right: 14px;
   background-color: none;
 }
 
