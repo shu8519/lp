@@ -113,13 +113,7 @@ h3 {
   background-color: #2b2e35;
   z-index: 10;
   opacity: 0.5;
-  transition: all 0.8s;
   pointer-events: none;
-}
-.set__img:hover:before {
-  pointer-events: none;
-  opacity: 0.3;
-  transition: all 0.8s;
 }
 .set__img-product {
   position: absolute;

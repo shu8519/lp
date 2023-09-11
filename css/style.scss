@@ -112,13 +112,7 @@ h3 {
       background-color: #2b2e35;
       z-index: 10;
       opacity: 0.5;
-      transition: all 0.8s;
       pointer-events: none;
-    }
-    &:hover:before {
-      pointer-events: none;
-      opacity: 0.3;
-      transition: all 0.8s;
     }
     &-product {
       position: absolute;
@@ -164,7 +158,6 @@ h3 {
   }
   &__sentense {
     margin-top: 10px;
-    // font-size: 28px;
     font-size: clamp(20px, 4vw, 28px);
     font-weight: 700;
     font-family: "Zen Old Mincho", serif;
@@ -173,11 +166,8 @@ h3 {
     }
   }
   &__price {
-    // margin-top: 18px;
-    // margin-bottom: 24px;
     margin-top: clamp(4px, 4vw, 18px);
     margin-bottom: clamp(10px, 4vw, 24px);
-
     font-family: "Noto Serif JP", serif;
     font-size: clamp(20px, 4vw, 32px);
     font-weight: 700;
@@ -263,7 +253,6 @@ h3 {
 }
 
 // SET PRICE(定期販売コース)
-
 .price {
   &__title {
     font-size: clamp(20px, 4vw, 24px);
@@ -497,7 +486,6 @@ h3 {
   border: 1px solid #2b2e35;
   font-size: 20px;
   font-size: clamp(16px, 4vw, 20px);
-
   font-weight: 400;
 }
 .price__accordion-content {
